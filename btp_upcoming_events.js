@@ -1,0 +1,35 @@
+"use strict";
+
+var dayEvent = new Array();
+
+dayEvent[1] = "";
+dayEvent[2] = "";
+dayEvent[3] = "<br />Japanese Tea Ceremony Class<br /> 10 AM";
+dayEvent[4] = "";
+dayEvent[5] = "<br />Q&A With Me!<br /> 3 PM";
+dayEvent[6] = "";
+dayEvent[7] = "";
+dayEvent[8] = "";
+dayEvent[9] = "";
+dayEvent[10] = "<br />Japanese Tea Ceremony Class<br /> 10 AM";
+dayEvent[11] = "";
+dayEvent[12] = "";
+dayEvent[13] = "<br />Annual Tea and Coffee Festival<br /> 9 AM";
+dayEvent[14] = "";
+dayEvent[15] = "<br />Tour of Jade Leaf Matcha Facility<br /> 10 AM";
+dayEvent[16] = "";
+dayEvent[17] = "<br />Japanese Tea Ceremony Class<br /> 10 AM";
+dayEvent[18] = "";
+dayEvent[19] = "";
+dayEvent[20] = "";
+dayEvent[21] = "";
+dayEvent[22] = "<br />Giveaway<br /> 12 PM";
+dayEvent[23] = "";
+dayEvent[24] = "<br />Japanese Tea Ceremony Class<br /> 10 AM";
+dayEvent[25] = "";
+dayEvent[26] = "";
+dayEvent[27] = "<br />Interview with Bala Sarda, the CEO of Vadham Teas<br /> 3 PM";
+dayEvent[28] = "";
+dayEvent[29] = "";
+dayEvent[30] = "";
+dayEvent[31] = "";

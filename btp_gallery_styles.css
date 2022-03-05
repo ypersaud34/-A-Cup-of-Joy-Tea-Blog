@@ -1,0 +1,38 @@
+/*Main div styling*/
+.gallery{
+  padding-top: 50px;
+  width: 60%;
+  margin: auto;
+}
+.gallery {
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*Styling for current images*/
+.imageSlides {
+  display: none;
+}
+.displayedImage{
+  width: 100%;
+
+}
+/*Styling for images next in line*/
+.nextInLine {
+  width:100%;
+  height:50% ;
+}
+.nextImages:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nextImageToDisplay {
+  float: left;
+  width: 16.66%;
+}
+
+
+

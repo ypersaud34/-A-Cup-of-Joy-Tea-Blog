@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--
+   The payment page for The Boiling Teapot
+   
+   Author: Yojeraj Persaud
+   Last Modified Date: July 8, 2021
+   
+   -->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Payment</title>
+      <link rel="stylesheet" type="text/css" href="btp_layout.css"/>
+      <link rel="stylesheet" type="text/css" href="btp_styles.css"/>
+      <script type="text/javascript" src="btp_order_merchandise.js" async></script>
+      <script type="text/javascript" src="btp_payment.js"></script>
+   </head>
+   <body>
+      <header>
+         <img src="btp_menu_image.png" alt="" id="menuImage">
+         <nav id="mainNav">
+            <ul>
+               <li><a id="" href="btp_home.html">Home</a></li>
+               <li><a href="btp_blog.html">Blog</a></li>
+               <li><a href="btp_events.html">Events</a></li>
+               <li><a href="btp_gallery.html">Gallery</a></li>
+               <li id="storeButton"><a href="btp_store.html">Store</a></li>
+               <li><a href="btp_aboutme.html">About Me</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div id="sideContent">
+         </aside>
+         <aside id="socialMedia">
+            <h3>Stay Updated!</h3>
+            <ul>
+               <li><a href="https://www.facebook.com/"><strong>Facebook</strong></a>
+               </li>
+               <li><a href="https://twitter.com/?lang=en"><strong>Twitter</strong></a>
+               </li>
+               <li><a href="https://www.instagram.com/"><strong>Instagram</strong></a>
+               </li>
+            </ul>
+         </aside>
+         <aside id="favoriteTeas">
+            <h3>Some of My Favorites</h3>
+            <ul>
+               <li><a href="https://www.harney.com/products/scottish-morn">Harney & Sons Scottish Breakfast Black Tea</a></li>
+               <li><a href="https://www.vahdamteas.com/products/indias-original-masala-chai-tea-loose-leaf-16oz?_pos=5&_sid=834d055bd&_ss=r&variant=31828416856107">Vadham's India's Original Masala Chai </a></li>
+               <li><a href="https://www.jadeleafmatcha.com/collections/shop-all/products/teahouse-edition-ceremonial-matcha?variant=7261916612">Jade Leaf's Organic Ceremonial Matcha - Teahouse Edition</a></li>
+               <li><a href="https://twiningsusa.com/collections/black-teas/products/english-breakfast">Twinnings English Breakfast Tea Bags</a></li>
+            </ul>
+         </aside>
+         <aside id="relatedContent">
+            <h3>Other Tea Lovers</h3>
+            <ul>
+               <li><a href="https://theteacupoflife.com/">The Tea Cup of Life</a></li>
+               <li><a href="https://www.teacachai.com/">Tea Cachai</a></li>
+               <li><a href="https://teathoughts.com/">Tea Thoughts</a></li>
+               <li><a href="https://melhadtea.com/">Mel Had Tea</a></li>
+               <li><a href="https://www.myjapanesegreentea.com/">My Japanese Green Tea</a></li>
+            </ul>
+         </aside>
+      </div>
+      <section id="paySection">
+         <h1>Payment Form</h1>
+         <form id="order" name="order">
+            <table id="orderTable">
+               <caption>Your Order</caption>
+               <tr>
+                  <td colspan="3" class="rightA">
+                     <input type="text" id="orderDate" name="orderDate" readonly />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <input type="text" name="modelName" id="modelName" readonly  />                                                
+                  </td>
+                  <td>
+                     <label>Qty: </label>
+                     <input type="text" name="qty" id="qty"  readonly />  
+                  </td>
+                  <td>
+                     <input type="text" name="initialCost" id="initialCost" size="10"  readonly />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <input type="text" name="protectionName" id="protectionName"  readonly />
+                  </td>
+                  <td>
+                     <input type="text" name="protectionCost" id="protectionCost" size="10" readonly  />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="rightA">Subtotal</td>
+                  <td class="outcell">
+                     <input type="text" name="subtotal" id="subtotal" size="10" readonly  />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="rightA">Tax (5%)</td>
+                  <td>
+                     <input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="rightA">TOTAL</td>
+                  <td>
+                     <input type="text" name="totalCost" id="totalCost" size="10" readonly  />
+                  </td>
+               </tr>
+            </table>
+         </form>
+         <form id="payment" name="payment" method="post" action="co_temp.html">
+            <fieldset id="creditcard">
+               <legend>Credit Information</legend>
+               <label for="cardName">Name*</label>
+               <input name="cardName" id="cardName" required type="text" />              
+               <fieldset id="cards">
+                  <label class="cardLabel">Credit Card*</label>
+                  <label class="cardLabel">
+                  <input name="credit" value="amex" type="radio" required />
+                  <img src="co_amex.png" alt="American Express" />
+                  </label>
+                  <label class="cardLabel">               
+                  <input name="credit" value="discover" type="radio" />
+                  <img src="co_discover.png" alt="Discover" />
+                  </label>
+                  <label class="cardLabel">                  
+                  <input name="credit" value="master" type="radio"  />
+                  <img src="co_master.png" alt="MasterCard" />
+                  </label>
+                  <label class="cardLabel">                  
+                  <input name="credit" value="visa" type="radio"  />
+                  <img src="co_visa.png" alt="Visa" />
+                  </label>
+               </fieldset>
+               <label for="cardNumber">Credit Card Number*</label>
+               <input name="cardNumber" id="cardNumber" required type="text"
+                  pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+               <label for="expMonth">Expiration Date*</label>
+               <select id="expMonth" name="expMonth">
+                  <option value="mm">mm</option>
+                  <option value="01">01</option>
+                  <option value="01">02</option>
+                  <option value="01">03</option>
+                  <option value="01">04</option>
+                  <option value="01">05</option>
+                  <option value="01">06</option>
+                  <option value="01">07</option>
+                  <option value="01">08</option>
+                  <option value="01">09</option>
+                  <option value="01">10</option>
+                  <option value="01">11</option>
+                  <option value="01">12</option>
+               </select>
+               <span> / </span>
+               <select id="expYear" name="expYear">
+                  <option value="yy">yy</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+               </select>
+               <label for="cvc">CVC*</label>
+               <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+            </fieldset>
+            <p id="footnote">* - Required Item</p>
+            <input type="submit" id="subButton" value="Submit Payment" />         
+         </form>
+      </section>
+      <footer>
+         <h4>&copy; 2021 The Boiling Teapot</h4>
+      </footer>
+   </body>
+</html>

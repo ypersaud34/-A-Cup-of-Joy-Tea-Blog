@@ -1,0 +1,126 @@
+@charset "utf-8";
+ @font-face{
+     font: 'Playfair Display';
+     src: url('PlayfairDisplay-VariableFont_wght.ttf');
+}
+ @font-face{
+     font: 'Roboto Thin';
+     src: url('roboto_thin.ttf');
+}
+ @font-face{
+     font: 'Open Sans';
+     src: url('OpenSans-Regular.ttf');
+}
+ 
+/*HTML Styles*/
+html{
+     font-family: 'Times New Roman';
+}
+
+/*Heading Styles*/
+h1{
+     font-family: 'Playfair Display';
+     font-size: 3.0em;
+}
+h2{
+     font-family: 'Playfair Display';
+     font-size: 2.0em;
+}
+h3{
+     font-family: 'Playfair Display';
+     font-size: 1.5em;
+}
+/*Navigation Styles*/
+#mainNav{
+     border-bottom:3px double lightgray;
+     width: 100%;
+     display: inline-block;
+}
+ #mainNav ul li{
+     font-family: 'Roboto Thin';
+     font-size: 1.2em;
+     line-height: 35px;
+     height: 40px;
+     display: inline-block;
+}
+ #mainNav ul li:hover{
+     background-color: rgb(227, 227, 227);
+}
+
+ #mainNav ul li a{
+     text-decoration: none;
+     color: black;
+     display: block;
+}
+
+#mainNav ul #storeButton:hover{
+     background-color: rgb(0, 141, 90);
+}
+
+/*Aside Styles*/
+ #relatedContent{
+     padding-bottom: 50px;
+}
+#relatedContent ul li{
+     line-height: 35px;
+     list-style: url('leaf_icon.png');
+}
+#favoriteTeas{
+     padding-bottom: 25px;
+     line-height: 25px;
+     border-bottom: 2px double lightgray;
+     list-style: url('leaf_icon.png');
+}
+ #socialMedia li:first-of-type{
+     list-style-image: url("facebook_logo.png");
+}
+ #socialMedia li:nth-of-type(2){
+     list-style-image: url("twitter_logo.png");
+}
+ #socialMedia li:nth-of-type(3){
+     list-style-image: url("instagram_logo.png");
+}
+ #socialMedia{
+     margin-top: -100px;
+     padding-bottom: 25px;
+     line-height: 50px;
+     border-bottom: 2px double lightgray;
+}
+/*Paragraph style*/
+
+p {
+     font-family: 'Open Sans';
+     font-size: 1.2em;
+}
+/*Footer styles*/
+footer{
+     font-size: 1.2;
+     background-color: white;
+}
+
+.buyButton input[type="submit"] {
+     font-size: 100px;
+     height: 50px;
+     width: 200px;
+}
+
+* {
+     font-family: 'Playfair Display';
+}
+#pageTitle{
+     width: 66%;
+     text-align: center;
+}
+.blogImages{
+     width: 100%;
+}
+#blogImage{
+    width: 100%;
+}
+#menuImage{
+     width: 100%;
+}
+.storeItem{
+     width: 100%;
+     border-bottom: 2px double lightgray;
+}

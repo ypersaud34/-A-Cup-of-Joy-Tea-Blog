@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+   The mug page for The Boiling Teapot
+   
+   Author: Yojeraj Persaud
+   Last Modified Date: July 8, 2021
+   
+   -->
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <title>BTP Mug</title>
+      <link rel="stylesheet" type="text/css" href="btp_layout.css"/>
+      <link rel="stylesheet" type="text/css" href="btp_styles.css"/>
+      <script type="text/javascript" src="btp_order_merchandise.js" async></script>
+      <script type="text/javascript" src="btp_payment.js"></script>
+   </head>
+   <body>
+      <header>
+         <img src="btp_menu_image.png" alt="" id="menuImage"/>
+         <nav id="mainNav">
+            <ul>
+               <li><a href="btp_home.html">Home</a></li>
+               <li><a href="btp_blog.html">Blog</a></li>
+               <li><a href="btp_events.html">Events</a></li>
+               <li><a href="btp_gallery.html">Gallery</a></li>
+               <li id="storeButton"><a href="btp_store.html">Store</a></li>
+               <li><a href="btp_aboutme.html">About Me</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div id="mainContent">
+         <h1 id="pageTitle">Store</h1>
+         <div id="sideContent">
+            <aside id="socialMedia">
+               <h3>Stay Updated!</h3>
+               <ul>
+                  <li><a href="https://www.facebook.com/"><strong>Facebook</strong></a>
+                  </li>
+                  <li><a href="https://twitter.com/?lang=en"><strong>Twitter</strong></a>
+                  </li>
+                  <li><a href="https://www.instagram.com/"><strong>Instagram</strong></a>
+                  </li>
+               </ul>
+            </aside>
+            <aside id="favoriteTeas">
+               <h3>Some of My Favorites</h3>
+               <ul>
+                  <li><a href="https://www.harney.com/products/scottish-morn">Harney & Sons Scottish Breakfast Black Tea</a></li>
+                  <li><a href="https://www.vahdamteas.com/products/indias-original-masala-chai-tea-loose-leaf-16oz?_pos=5&_sid=834d055bd&_ss=r&variant=31828416856107">Vadham's India's Original Masala Chai </a></li>
+                  <li><a href="https://www.jadeleafmatcha.com/collections/shop-all/products/teahouse-edition-ceremonial-matcha?variant=7261916612">Jade Leaf's Organic Ceremonial Matcha - Teahouse Edition</a></li>
+                  <li><a href="https://twiningsusa.com/collections/black-teas/products/english-breakfast">Twinnings English Breakfast Tea Bags</a></li>
+               </ul>
+            </aside>
+            <aside id="relatedContent">
+               <h3>Other Tea Lovers</h3>
+               <ul>
+                  <li><a href="https://theteacupoflife.com/">The Tea Cup of Life</a></li>
+                  <li><a href="https://www.teacachai.com/">Tea Cachai</a></li>
+                  <li><a href="https://teathoughts.com/">Tea Thoughts</a></li>
+                  <li><a href="https://melhadtea.com/">Mel Had Tea</a></li>
+                  <li><a href="https://www.myjapanesegreentea.com/">My Japanese Green Tea</a></li>
+               </ul>
+            </aside>
+         </div>
+         <section id="mugDetails">
+            <h1>Black Boiling Teapot 12oz Mug<sup>&reg;</sup></h1>
+            <img src="btp_mug.png" alt="" />
+            <p>
+               Comfy black mug for all The Boiling Teapot fans!
+            </p>
+            <label value="6.99">Price: $6.99</label>
+         </section>
+         <section id="orderSection">
+            <form id="orderForm" name="orderForm" action="btp_payment.html" method="post">
+               <table id="orderTable">
+                  <tr>
+                     <td class="modifications">
+                        <label for="qty">Qty</label>
+                        <select name="qty" id="qty">
+                           <option value="1" selected>1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="3" class="rightA">Initial Cost</td>
+                     <td>
+                        <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="3" class="rightA">Tax (8%)</td>
+                     <td>
+                        <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="3" class="rightA">Total</td>
+                     <td>
+                        <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+                     </td>
+                  </tr>
+               </table>
+               <input type="submit" id="buttonAdd" value="add to cart" />
+            </form>
+         </section>
+      </div>
+      <footer>
+         <h4> &copy; 2021 The Boiling Teapot</h4>
+      </footer>
+   </body>
+</html>

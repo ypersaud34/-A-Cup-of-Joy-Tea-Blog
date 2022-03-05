@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*Styling for entire calender*/
+#eventCalendar_table {
+   background-color: white;  
+   font-size: 0.9em; 
+   font-family: sans-serif;
+   width: 70%;
+
+}
+/*Styling for calender title*/
+#currentMonth{
+   caption-side: top; 
+   text-align: center;
+   padding-bottom: 20px; 
+   font-size: 2.6em; 
+}
+/*For weekdays in month*/
+.eventCalendar_weekdays {
+   width: 14.28%; 
+   font-size: 1em; 
+
+}
+/*For all days in the month*/
+.eventCalendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 1em;
+   padding: 3px;
+   background-color: white;
+   height: 60px;
+   border: 1px solid black;
+}
+/*For the current date*/
+#eventCalendar_today {
+   font-weight: bold; 
+   color: rgb(51, 51, 51);
+   background-color: rgb(137, 184, 76);
+   border: 2px solid black;
+}
+
+

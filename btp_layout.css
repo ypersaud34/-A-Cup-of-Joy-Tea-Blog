@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*Styles for main content*/
+html{
+    margin: 0 auto;
+}
+#menuImage{
+     margin:0;
+     padding:0;
+}
+#mainNav ul{
+     list-style: none;
+     text-align: center;
+     padding: 0;
+     margin: 0;
+}
+#mainNav ul li{
+     padding-left: 60px;
+     padding-right: 60px;
+}
+#mainContent{
+     min-width: 60%;
+     width: 60%;
+     margin: auto;
+}
+/*Aside Styles*/
+ #sideContent{
+     width: 25%;
+     float: right;
+}
+/*Styles for blog entries*/
+.entries{
+     margin: auto;
+     width: 65%;
+     float: left;
+     padding-bottom: 30px;
+}
+.entries:first-of-type{
+     margin-top: -30px;
+}
+.entries p{
+     height: 200px;
+     width: 100%;
+     word-wrap: break-word;
+}
+#blog{
+    width: 60%;
+}
+/*Styles for about me page*/
+#aboutMe img{
+     float: left;
+     margin-right: 20px;
+     margin-bottom: 20px;
+}
+#aboutMe p{
+     margin-right: 300px;
+}
+/*Styles for shopping page*/
+#merchandise{
+     width: 66%;
+}
+.itemPicture{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 30px;
+     width: 80%;
+     border: 2px double black;
+}
+
+.storeItem figcaption{
+     text-align: center;
+}
+.buyButton{
+     padding-bottom: 50px;
+     text-align: center;
+}
+.viewButtons{
+    width: 30%;
+    height: 50px;
+}
+
+/* Footer styles */
+footer{
+     clear: both;
+    position: relative;
+    height: 20px;
+    margin-top: -20px;
+}
+footer h4{
+    text-align: center;
+}
